@@ -18,7 +18,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/Felipe-Dumont/github-api-app/blob/main/public/img/overview3.gif)
+![screenshot](https://github.com/Felipe-Dumont/table-cep/blob/main/public/img/overview3.gif)
 
 - Você pode encontrar uma demo [aqui](https://felipe-dumont.github.io/table-cep/).
 - Neste projeto tive a experiência de trabalhar com Laravel. Utilizando seus recursos nativos como Blade para trabalhar com templates HTML, Web Routes para registrar as rotas da aplicação e testes de unidade do PHPUnit para criar uma consulta de um ou mais CEP e criar uma tabela a partir dos dados coletados. É possível também gerar um .csv baseado na tabela.  
@@ -40,12 +40,18 @@ Para clonar e executar este aplicativo, você precisará de [Git](https://git-sc
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Felipe-Dumont/github-api-app.git
+$ git clone https://github.com/Felipe-Dumont/table-cep.git
 
 # install dependencies
-$ composer install
+$ composer install --no-scripts
 # and
-$ npm install
+$ npm install 
+
+# Copy the .env.example file
+$ cp .env.example .env
+
+# Create a new key for the application
+php artisan key:generate
 
 # Run the app
 $ php artisan serve
