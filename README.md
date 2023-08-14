@@ -1,66 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1 align="center">Consulta CEPs - Grupo Acert </h1>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<div align="center">
+   Teste 3 do Teste para desenvolvedor Front-end/back PHP do Grupo Acert.
+</div>
 
-## About Laravel
+<!-- TABLE OF CONTENTS -->
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Table of Contents
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How To Use](#how-to-use)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<!-- OVERVIEW -->
 
-## Learning Laravel
+## Overview
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![screenshot](https://github.com/Felipe-Dumont/github-api-app/blob/main/public/img/overview3.gif)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Você pode encontrar uma demo [aqui](https://felipe-dumont.github.io/table-cep/).
+- Neste projeto tive a experiência de trabalhar com Laravel. Utilizando seus recursos nativos como Blade para trabalhar com templates HTML, Web Routes para registrar as rotas da aplicação e testes de unidade do PHPUnit para criar uma consulta de um ou mais CEP e criar uma tabela a partir dos dados coletados. É possível também gerar um .csv baseado na tabela.  
+- Aprendi a trabalhar com criação dinâmica de tabelas e geração de arquivos .csv .
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Built With
 
-## Laravel Sponsors
+- [Laravel](https://laravel.com/)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Features
 
-### Premium Partners
+Esse projeto foi criado com o objetivo de concluir um desafio. O desafio era Consumir a api de CEP, possibilitar consultas por um ou mais CEPs e criar uma tabela para exibir os dados do coletados pela consulta, criar um botão para exportar todos os registros de cep’s consultados em um arquivo no formato csv e um botão para limpar todo o conteúdo da table.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Foi criada uma tela inicial que contém uma área de texto para digitar os CEP, eles podem ser separados por espaço ou por vírgula para realizar a consulta. Com os CEPs ele realiza uma busca e cria uma tabela com os dados coletados da API de CEP. Quando a tabela é gerada, os botões para exportar e limpar a tabela são habilitados. O botão de exportar chama a função que vai criar o formato e gerar o download do arquivo .csv. O botão de limpar tabela vai gerar os registros da tabela.
 
-## Contributing
+## How To Use
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com) instalado em seu computador. Na sua linha de comando:
 
-## Code of Conduct
+```bash
+# Clone this repository
+$ git clone https://github.com/Felipe-Dumont/github-api-app.git
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# install dependencies
+$ composer install
+# and
+$ npm install
 
-## Security Vulnerabilities
+# Run the app
+$ php artisan serve
+# and
+$ npm run dev
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
