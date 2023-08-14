@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CepController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [CepController::class, 'index'])->name('index');
+Route::post('/consulta-cep', [CepController::class, 'consultaCep'])->name('consulta-cep');
+Route::post('/export-csv', [CepController::class, 'exportCsv'])->name('export-csv');
+Route::post('/limpar-tabela', [CepController::class, 'limparTabela'])->name('limpar-tabela');
