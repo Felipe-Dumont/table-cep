@@ -20,7 +20,6 @@
 
 ![screenshot](https://github.com/Felipe-Dumont/table-cep/blob/main/public/imgs/overview3.gif)
 
-- Você pode encontrar uma demo [aqui](https://felipe-dumont.github.io/table-cep/).
 - Neste projeto tive a experiência de trabalhar com Laravel. Utilizando seus recursos nativos como Blade para trabalhar com templates HTML, Web Routes para registrar as rotas da aplicação e testes de unidade do PHPUnit para criar uma consulta de um ou mais CEP e criar uma tabela a partir dos dados coletados. É possível também gerar um .csv baseado na tabela.  
 - Aprendi a trabalhar com criação dinâmica de tabelas e geração de arquivos .csv .
 
