@@ -35,7 +35,7 @@ Foi criada uma tela inicial que contém uma área de texto para digitar os CEP, 
 
 ## How To Use
 
-Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com) instalado em seu computador. Na sua linha de comando:
+Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [Composer](https://getcomposer.org/) e [npm](https://www.npmjs.com/) instalados em seu computador. Na sua linha de comando:
 
 ```bash
 # Clone this repository
